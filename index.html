@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>college portal login system</title>
+    <style>
+        body {
+            background-color: lavender;
+            font-family: Arial;
+            margin: 0;
+        }
+        .box {
+            width: 80%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 10px;
+            color: black;
+        }
+        h2 {
+            color: navy;
+        }
+        button, input {
+            background-color: white;
+            padding: 10px;
+        }
+        header, footer {
+            background-color: lightblue;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>This is KL portal login page</h2>
+    </header>
+    <div class="box">
+        <form onsubmit="login(event)">
+            <input type="email" placeholder="enter your email" id="email" required>
+            <input type="password" placeholder="enter your password" id="pass" required>
+            <button type="submit">submit</button>
+        </form>
+    </div>
+
+
+    <script src="login.js"></script>
+</body>
+</html>
